@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="githubViewer">
+
+<head>
+  <script data-require="angular.js@*" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script_directives_views.js"></script>
+  <script src="github.js"></script>
+</head>
+
+<body ng-controller="mainController">
+  <div id="title">
+    <h1>Github API</h1>
+  </div>
+
+  <div id="github-example">
+    <h2>Github API Example</h2>
+    <h3> {{error}}</h3>
+    
+    <h4 ng-hide="user">Service timeout: {{countdown}}</h4>
+    <form name="searchapiUser" action="" ng-submit="search(username)">
+      <input type="search" placeholder="Github username" ng-model="username" required />
+      <input type="submit" value="Search"/>
+    </form>
+  
+    <div ng-include="'nginclude_example.html'" ng-show="user"></div>    
+
+  </div>
+
+  <br>
+
+  <div id="back">
+    <a href="index.html">Back</a>
+  </div>
+</body>
+
+</html>

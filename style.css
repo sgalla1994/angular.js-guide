@@ -1,0 +1,45 @@
+/* Styles go here */
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+img {
+  height: 75px;
+  width: 75px;
+}
+
+h1 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+h2 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+h3 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+h4 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+h5 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+a {
+  font-family: 'Varela Round', sans-serif;
+  text-decoration: none;
+}
+
+a:link {
+  font-family: 'Varela Round', sans-serif;
+  text-decoration: none;
+}
+
+a:visited {
+  font-family: 'Varela Round', sans-serif;
+  text-decoration: none;
+  
+}
+a:visited: color: white;

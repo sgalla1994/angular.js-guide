@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="githubViewer">
+
+<head>
+  <script data-require="angular.js@*" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="beautons.css"/>
+  <script src="script_controller.js"></script>
+</head>
+
+<body ng-controller="mainController">
+  <div id="title">
+    <h1>Controllers</h1>
+  </div>
+  <div id="basic-text">
+    <h2>3 basic facts of a controller</h2>
+    <h4>controller directive in HTML (ng-controller="#") - this directive can only be used inside areas where we have ng-app in place</h4>
+    <h4>controllers are only functions - we dont invoke them angular functions do</h4>
+    <h4>controller takes a $scope parameter - this is used for things which we attach to the model - models allow us to make data available to use in the controller area</h4>
+  </div>
+  
+  <div id="controller-further">
+    <h2>Controller capabilities</h2>
+    <h4>multiple controllers in complex programmes</h4>
+    <h4>complex objects</h4>
+    <h4>nest controllers</h4>
+  </div>
+  
+  <div id="controller-demo">
+    <h2>Controller demo</h2>
+    <h4>{{message}}</h4>
+  </div>
+  
+  <div id="controller-demo-2">
+    <h2>Controller demo 2</h2>
+    <h4>First Name: {{personfirstname}}</h4>
+    <h4>Last Name: {{personlastname}}</h4>
+    <!--<div id="img1">-->
+    <!--  <img src="{{personimagesrc" }}="" title="{{personfirstname}} {{personlastname}}" />-->
+    <!--</div>-->
+  </div>
+  
+  <div id="github-example">
+    <h2>Github API Example</h2>
+    <h3> {{error}}</h3>
+    <h4>ID: {{user.id}}</h4>
+    <h4>Username: {{user.login}}</h4>
+  </div>
+  
+  <br />
+  
+  <div id="back">
+    <a class="btn btn--negative" href="index.html">Back</a>
+  </div>
+</body>
+
+</html>

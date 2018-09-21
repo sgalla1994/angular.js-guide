@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="githubViewer">
+
+<head>
+  <script data-require="angular.js@*" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="beautons.css"/>
+  <script src="script_directives_views.js"></script>
+  <script src="github.js"></script>
+</head>
+
+<body ng-controller="mainController">
+  <div id="title">
+    <h1>Directives & Views</h1>
+  </div>
+
+  <div id="basic-test">
+    <h2>What we understand so far...</h2>
+    <h4>$scope provides the model for the application</h4>
+    <h4>the model does not touch HTML - it used directives with binding</h4>
+    <h4>data binding moves model data to view</h4>
+    <h4>we have shown to build images with information from data bindings</h4>
+    <a class="btn btn--small" href="index_moredirectives.html">view more directives here</a>
+  </div>
+
+  <br>
+
+  <div id="back">
+    <a class="btn btn--negative"  href="index.html">Back</a>
+  </div>
+</body>
+
+</html>
